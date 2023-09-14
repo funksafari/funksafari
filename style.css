@@ -11,12 +11,36 @@
     background-color: #FFFCEB; 
     color: #000;
     }
-.fs-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
-.fs-button:hover{color:#fff!important;background-color: #f7a372}
-.fs-round{border-radius:8px}
-.fs-band-name{font-size: x-large;}
+
+.fs-button{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+}
+
+.fs-button:hover{
+    color:#fff!important;
+    background-color: #f7a372
+}
+
 .fs-band-img{
-    width: 80%;
+    width: 49.9999%;
+    border-radius: 20px;
+    padding: 5px;
+    float:left;
+    text-align: center;
+}
+
+.fs-dom {
+    width: 100%;
 }
 
 .fs-border{
@@ -28,13 +52,20 @@
     background-color: #FFFCEB;
 }
 
-.fs-band-member{
-    background-image: url("/images/adair.jpg");
+.parallax {
+    /* The image used */
+    background-image: url("images/band.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+    width: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
-    width: 100%
-}
-
+  }
 
 /* width */
 ::-webkit-scrollbar {
@@ -106,7 +137,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-dropdown-hover:first-child,.w3-dropdown-click:hover{background-color:#ccc;color:#000}
 .w3-dropdown-hover:hover > .w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child{background-color:#ccc;color:#000}
 .w3-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
-.w3-check,.w3-radio{width:24px;height:24px;position:relative;top:6px}
+.w3-check,.w3-radio{width:24px;height:24px;position:relative;top:6px} 
 .w3-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
 .w3-bar-block .w3-dropdown-hover,.w3-bar-block .w3-dropdown-click{width:100%}
 .w3-bar-block .w3-dropdown-hover .w3-dropdown-content,.w3-bar-block .w3-dropdown-click .w3-dropdown-content{min-width:100%}
