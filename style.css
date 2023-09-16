@@ -61,15 +61,22 @@
   
     /* Set a specific height */
     min-height: 100vh;
-    /* width: 100%; */
     max-width: 100%;
-  
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+/* Adjust parallax behavior for mobile devices */
+@media (max-width: 768px) {
+    .parallax {
+        /* Remove the fixed attachment on mobile */
+        background-attachment: fixed;
+        /* You can also adjust other properties like background-position if needed */
+    }
+}
 
 /* width */
 ::-webkit-scrollbar {
