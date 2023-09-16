@@ -72,10 +72,11 @@
 /* Adjust parallax behavior for mobile devices */
 @media (max-width: 768) {
     .parallax {
+        width: auto; 
+        height: auto;
         /* Remove the fixed attachment on mobile */
         background-attachment: scroll;
         background-position: center;
-        max-width: 100vw;
         /* You can also adjust other properties like background-position if needed */
     }
 }
