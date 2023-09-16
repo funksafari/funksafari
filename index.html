@@ -50,9 +50,10 @@ body {font-family: "Lato", sans-serif}
     <div class="fs-border"></div>
     <!-- PROFILE IMG -->
 
-    <div>
-      <div class="parallax w3-center"></div>
-    </div>      
+
+    <div class="parallax-container">
+      <img class="parallax-image" src="images/band.png" alt="Parallax Image">
+    </div>
       
     <!-- SHOWS -->
     <div class="fs-cream" id="shows">
@@ -123,6 +124,16 @@ function myFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+const parallaxContainer = document.querySelector('.parallax-container');
+        const parallaxImage = document.querySelector('.parallax-image');
+
+        parallaxContainer.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+
+            parallaxImage.style.transform = `translate(-${x * 20}px, -${y * 20}px)`;
+        });
 
 </script>
 
