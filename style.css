@@ -56,13 +56,9 @@
 }
 
 .parallax {
-    /* The image used */
     background-image: url("images/band.png");
-  
-    /* Set a specific height */
     min-height: 100vh;
     max-width: 100%;
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center; 
     background-repeat: no-repeat;
@@ -70,15 +66,11 @@
   }
 
 /* Adjust parallax behavior for mobile devices */
-@media (max-width: 768) {
+@media (max-width: 768px) {
     .parallax {
-        width: 768px; 
-        /* height: auto; */
-        /* Remove the fixed attachment on mobile */
         background-attachment: scroll;
-        background-position: center;
-        /* You can also adjust other properties like background-position if needed */
-    }
+        background-position: center; 
+      }
 }
 
 /* width */
