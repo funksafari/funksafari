@@ -32,7 +32,7 @@
 
 .fs-button:hover{
     color:#fff!important;
-    background-color: #f7a372
+    background-color: #fab38a
 }
 
 .fs-band-img{
@@ -50,9 +50,47 @@
 .fs-border{
     width: 40%;
     margin: auto;
-    border-bottom-color: hsl(23, 100%, 92%); 
+    border-bottom-color: hsl(23, 100%, 79%); 
     border-bottom-width: 2px;
     border-bottom-style: solid;
+}
+
+.fs-form{
+	margin: 10px auto;
+	padding: 20px;
+	border-radius: 8px;
+    display: block;
+}
+
+.fs-label {
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color:  #fff7d1;
+    border: 1px solid gray;
+    width: 80%
+}
+
+.fs-message {
+    height: 20vh;
+    width: 80%
+}
+
+.fs-submit {
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border: 0px;
+    border-radius: 5px;
+    text-align:center;
+    background-color: #019E95;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+.fs-submit:hover {
+    background-color: hsl(22, 100%, 80%);
+    cursor:pointer;
+    color: gray;
 }
 
 .parallax {

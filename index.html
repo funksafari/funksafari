@@ -47,7 +47,7 @@ body {font-family: "Lato", sans-serif}
         </div>
       </div>
     
-    <div class="fs-border"></div>
+    <!-- <div class="fs-border"></div> -->
     <!-- PROFILE IMG -->
 
 
@@ -62,8 +62,7 @@ body {font-family: "Lato", sans-serif}
         <div class="w3-center fs-txt">
           <!-- <p><a href="https://midwaycafe.com/">12/13 - Midway Cafe, Jamaica Plain, MA</a></p> -->
           <!-- <p><a href="http://www.ralphsrockdiner.com/">12/14 - Ralph 's Rock Diner, Worcester, MA</a></p> -->
-          <p><a href="https://www.thejunglemusicclub.com/">1/27 - The Jungle, Somerville, MA</a></p>
-          <p><a href="https://www.thecantablounge.com/">2/2 - The Cantab Lounge, Cambridge, MA</a></p>
+          <!-- <p><a href="https://www.thejunglemusicclub.com/">1/27 - The Jungle, Somerville, MA</a></p> -->
           <p><a href="https://www.sugarbush.com/">3/9 - Sugarbush Ski Resort (Lodge TBD), Warren, VT</a></p>
           <!-- <p><a href="https://www.facebook.com/uniontavernsomerville/">3/29 - Union Tavern, Somerville, MA</a></p> -->
           <p><a href="https://www.thecantablounge.com/">4/12 - The Cantab Lounge, Cambridge, MA</a></p>
@@ -97,10 +96,30 @@ body {font-family: "Lato", sans-serif}
   <div class="fs-border"></div>
 
   <!-- The Contact Section -->
-  <div class="fs-cream fs-txt">
+  <div class="fs-cream fs-txt w3-center">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
       <h1 class="w3-wide w3-center">CONTACT</h1>
-      <p class ='w3-center'>For booking, please email funk.safari.music@gmail.com</p>
+      <p>If you are interested in booking, send us a note!</p>
+
+      <div class="fs-form">
+        <form
+          action="https://formspree.io/f/xbjndpnz"
+          method="POST"
+        >
+          <label>
+            <input type="text" name="name" placeholder="Name*" class="fs-label"><br>
+          </label>
+          <label>
+            <input type="text" name="email" placeholder="Email*" class="fs-label"><br>
+          </label>
+          <label>
+            <textarea name="message" placeholder="Message*" class="fs-label fs-message"></textarea>
+          </label>
+          <div class="w3-center">
+            <button type="submit" class="fs-submit">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 
