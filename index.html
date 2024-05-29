@@ -14,30 +14,50 @@ body {font-family: "Lato", sans-serif}
 </style>
 </head>
 <body>
+  
 
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar fs-blue w3-card">
     <a class="w3-bar-item fs-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item fs-button w3-padding-large">HOME</a>
-    <a href="#shows" class="w3-bar-item fs-button w3-padding-large w3-hide-small">SHOWS</a>
-    <a href="#band" class="w3-bar-item fs-button w3-padding-large w3-hide-small">BAND</a>
+    
+    <a href="#about" class="w3-bar-item fs-button w3-padding-large w3-hide-small">ABOUT</a>
     <a href="#media" class="w3-bar-item fs-button w3-padding-large w3-hide-small">MEDIA</a>
+    <a href="#shows" class="w3-bar-item fs-button w3-padding-large w3-hide-small">SHOWS</a>
+    <a href="#gallery" class="w3-bar-item fs-button w3-padding-large w3-hide-small">GALLERY</a>
     <a href="#contact" class="w3-bar-item fs-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small"></div>
+    <div class="dropdown">
+        <button class="dropbtn fs-button w3-padding-large w3-hide-small">SOCIAL</button>
+        <div class="dropdown-content">
+          <a href="https://www.instagram.com/funk_safari_band"><i class="fa fa-instagram w3-hover-opacity"></i> Instagram</a>
+          <a href="https://youtube.com/@FunkSafari?si=ljwCNTizXCR9HArS"><i class="fa fa-youtube w3-hover-opacity"></i> YouTube</a>
+          <a href="https://soundcloud.com/funksafari"><i class="fa fa-soundcloud w3-hover-opacity"></i> SoundCloud</a>
+          <a href="https://www.facebook.com/funksafari/"><i class="fa fa-facebook-official w3-hover-opacity"></i> Facebook</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#about" class="w3-bar-item fs-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="#media" class="w3-bar-item fs-button w3-padding-large" onclick="myFunction()">MEDIA</a>
+  <a href="#shows" class="w3-bar-item fs-button w3-padding-large" onclick="myFunction()">SHOWS</a>
+  <a href="#gallery" class="w3-bar-item fs-button w3-padding-large" onclick="myFunction()">GALLERY</a>
+  <a href="#contact" class="w3-bar-item fs-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <div class="dropdown">
+    <button class="dropbtn w3-bar-item fs-button w3-padding-large" onclick="myFunction()">SOCIAL</button>
+    <div class="dropdown-content">
+      <a href="https://www.instagram.com/funk_safari_band"><i class="fa fa-instagram w3-hover-opacity"></i> Instagram</a>
+      <a href="https://youtube.com/@FunkSafari?si=ljwCNTizXCR9HArS"><i class="fa fa-youtube w3-hover-opacity"></i> YouTube</a>
+      <a href="https://soundcloud.com/funksafari"><i class="fa fa-soundcloud w3-hover-opacity"></i> SoundCloud</a>
+      <a href="https://www.facebook.com/funksafari/"><i class="fa fa-facebook-official w3-hover-opacity"></i> Facebook</a>
+    </div>
   </div>
 </div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#shows" class="w3-bar-item fs-button w3-padding-large" onclick="myFunction()">SHOWS</a>
-  <a href="#band" class="w3-bar-item fs-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#media" class="w3-bar-item fs-button w3-padding-large" onclick="myFunction()">MEDIA</a>
-  <a href="#contact" class="w3-bar-item fs-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-</div>
-
 <!-- Page content -->
-<div class="w3-content fs-cream" style="max-width:2000px;margin-top:46px">
+<!-- <div class="w3-content fs-cream" style="max-width:2000px;margin-top:46px"> -->
   
   <div>
     <div class="parallax w3-center"></div>
@@ -45,61 +65,22 @@ body {font-family: "Lato", sans-serif}
   
     <!-- ABOUT -->
     <div class="fs-cream">
-      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="about">
         <h1 class="w3-wide w3-center">ABOUT</h1>
         <div class="w3-center fs-txt">
           <p>Funk Safari is a Boston-based funk group that plays a blend of funk, rock, jazz, and R&B.</p>
+          <br>
+          <p>Nick Adair - Drums</p>
+          <p>John Krone - Bass</p>
+          <p>Josh Soper - Guitar</p>
+          <p>Dom Orlando - Keyboard</p>
+          <p>Joe Orlando - Vocals/Saxohone</p>
         </div>
       </div>
     </div>
     
     <div class="fs-border"></div>
-    <!-- PROFILE IMG -->
 
-
-      
-    <!-- SHOWS -->
-    <div class="fs-cream" id="shows">
-      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-        <h1 class="w3-wide w3-center">UPCOMING SHOWS</h1>
-        <div class="w3-center fs-txt">
-          <!-- <p><a href="https://midwaycafe.com/">12/13 - Midway Cafe, Jamaica Plain, MA</a></p> -->
-          <!-- <p><a href="http://www.ralphsrockdiner.com/">12/14 - Ralph 's Rock Diner, Worcester, MA</a></p> -->
-          <!-- <p><a href="https://www.thejunglemusicclub.com/">1/27 - The Jungle, Somerville, MA</a></p> -->
-          <!-- <p><a href="https://www.sugarbush.com/">3/9 - Sugarbush Ski Resort (Lodge TBD), Warren, VT</a></p> -->
-          <!-- <p><a href="https://www.facebook.com/uniontavernsomerville/">3/29 - Union Tavern, Somerville, MA</a></p> -->
-          <!-- <p><a href="https://www.thecantablounge.com/">4/12 - The Cantab Lounge, Cambridge, MA</a></p> -->
-          <p><a>5/11 - Somerville Porchfest, Somerville, MA</a></p>
-          <!-- <p><a>4/12 - The Cantab Lounge, Cambridge, MA</a></p> -->
-          <!-- <p><a>4/12 - The Cantab Lounge, Cambridge, MA</a></p> -->
-        </div>
-      </div>
-    </div>
-
-<div class="fs-border"></div>
-    
-  <!-- The Band Section -->
-  <div class="fs-cream">
-    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-      <h1 class="w3-wide">BAND</h1>
-      <div class="w3-row w3-margin-top w3-margin-bottom fs-txt">
-        <div>
-          <p>Nick Adair - Drums</p>
-          <p>John Krone - Bass</p>
-          <p>Joe Orlando - Vocals/Saxohone</p>
-          <p>Josh Soper - Guitar</p>
-          <p>Dom Orlando - Keyboard</p>
-          <img src="images/adair.png" class="fs-band-img">
-          <img src="images/krone.png" class="fs-band-img">
-          <img src="images/orlando_J.png" class="fs-band-img">
-          <img src="images/soper.png" class="fs-band-img">
-          <img src="images/orlando_D.png" class="w3-center fs-band-img" style="width: 100%">
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="fs-border"></div>
     <!-- The Band Section -->
     <div class="fs-cream">
       <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="media">
@@ -111,7 +92,45 @@ body {font-family: "Lato", sans-serif}
         </div>
       </div>
     </div>
+    
+    <div class="fs-border"></div>
 
+    <!-- SHOWS -->
+    <div class="fs-cream" id="shows">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h1 class="w3-wide w3-center">UPCOMING SHOWS</h1>
+        <div class="w3-center fs-txt">
+          <!-- <p><a href="https://midwaycafe.com/">12/13 - Midway Cafe, Jamaica Plain, MA</a></p> -->
+          <!-- <p><a href="http://www.ralphsrockdiner.com/">12/14 - Ralph 's Rock Diner, Worcester, MA</a></p> -->
+          <!-- <p><a href="https://www.thejunglemusicclub.com/">1/27 - The Jungle, Somerville, MA</a></p> -->
+          <!-- <p><a href="https://www.sugarbush.com/">3/9 - Sugarbush Ski Resort (Lodge TBD), Warren, VT</a></p> -->
+          <!-- <p><a href="https://www.facebook.com/uniontavernsomerville/">3/29 - Union Tavern, Somerville, MA</a></p> -->
+          <p><a href="https://www.mideastoffers.com/">6/6 - Middle East (Upstairs), Cambridge, MA</a></p>
+          <p><a>6/8 - Providence Porchfest, Providence, RI</a></p>
+          <p><a href="https://www.thecantablounge.com/">9/13 - The Cantab Lounge, Cambridge, MA</a></p>
+          <!-- <p><a>4/12 - The Cantab Lounge, Cambridge, MA</a></p> -->
+          <!-- <p><a>4/12 - The Cantab Lounge, Cambridge, MA</a></p> -->
+        </div>
+      </div>
+    </div>
+
+<div class="fs-border"></div>
+    
+  <div class="fs-cream">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="gallery">
+      <h1 class="w3-wide">GALLERY</h1>
+      <div class="w3-row w3-margin-top w3-margin-bottom fs-txt">
+        <div>
+          <img src="images/adair.png" class="fs-band-img">
+          <img src="images/krone.png" class="fs-band-img">
+          <img src="images/orlando_J.png" class="fs-band-img">
+          <img src="images/soper.png" class="fs-band-img">
+          <img src="images/orlando_D.png" class="w3-center fs-band-img" style="width: 100%">
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <div class="fs-border"></div>
 
   <!-- The Contact Section -->
@@ -146,10 +165,10 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Footer -->
 <footer class="w3-container w3-center w3-xlarge fs-orange w3-padding-large">
-  <a href="https://www.facebook.com/funksafari/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
   <a href="https://www.instagram.com/funk_safari_band"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
   <a href="https://youtube.com/@FunkSafari?si=ljwCNTizXCR9HArS"> <i class="fa fa-youtube w3-hover-opacity"></i></a>
   <a href="https://soundcloud.com/funksafari"> <i class="fa fa-soundcloud w3-hover-opacity"></i></a>
+  <a href="https://www.facebook.com/funksafari/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
   <i class=""></i>
 </footer>
 
