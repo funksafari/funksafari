@@ -123,6 +123,7 @@ body {
     margin: auto;
     padding: 0% 0% 56.25%; /* 16:9 ratio */
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .yt iframe {
