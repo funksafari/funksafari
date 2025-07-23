@@ -125,7 +125,7 @@ body {
 }
 
 .parallax {
-    background-image: url("images/band.png");
+    background-image: url("images/band.jpg");
     min-height: 100vh;
     max-width: 100%;
     background-attachment: fixed;
