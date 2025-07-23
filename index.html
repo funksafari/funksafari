@@ -9,15 +9,25 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="shortcut icon" href="./images/fs-icon.png">
 <style>
-body {font-family: "Lato", sans-serif}
+body {font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 .mySlides {display: none}
 </style>
 </head>
 <body>
   
+<!-- Hero Section -->
+<header class="hero-section">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <img src="images/fs-icon.png" alt="Funk Safari Logo" class="hero-logo" />
+    <h1 class="hero-title">Funk Safari</h1>
+    <!-- <p class="hero-subtitle">Boston's Funk, Rock, Jazz & R&B Collective</p> -->
+    <a href="#shows" class="hero-cta">See Upcoming Shows</a>
+  </div>
+</header>  
 
 <!-- Navbar -->
-<div class="w3-top">
+<!-- <div class="w3-top">
   <div class="w3-bar fs-blue w3-card">
     <a class="w3-bar-item fs-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     
@@ -35,10 +45,10 @@ body {font-family: "Lato", sans-serif}
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   
   <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <!-- <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="#about" class="w3-bar-item fs-button w3-padding-large" onclick="myFunction()">ABOUT</a>
   <a href="#media" class="w3-bar-item fs-button w3-padding-large" onclick="myFunction()">MEDIA</a>
   <a href="#shows" class="w3-bar-item fs-button w3-padding-large" onclick="myFunction()">SHOWS</a>
@@ -53,14 +63,30 @@ body {font-family: "Lato", sans-serif}
       <a href="https://www.facebook.com/funksafari/"><i class="fa fa-facebook-official w3-hover-opacity"></i> Facebook</a>
     </div>
   </div>
-</div>
+</div> -->
+
+<!-- NavBar -->
+ <nav class="navbar">
+  <div class="navbar-container">
+    <a href="#about" class="nav-link">ABOUT</a>
+    <a href="#shows" class="nav-link">SHOWS</a>
+    <a href="#media" class="nav-link">MEDIA</a>
+    <a href="#gallery" class="nav-link">GALLERY</a>
+    <div class="dropdown">
+      <button class="dropbtn">SOCIAL ▼</button>
+      <div class="dropdown-content">
+        <a href="https://www.instagram.com/funk_safari_band"><i class="fa fa-instagram"></i> Instagram</a>
+        <a href="https://youtube.com/@FunkSafari?si=ljwCNTizXCR9HArS"><i class="fa fa-youtube"></i> YouTube</a>
+        <a href="https://soundcloud.com/funksafari"><i class="fa fa-soundcloud"></i> SoundCloud</a>
+        <a href="https://www.facebook.com/funksafari/"><i class="fa fa-facebook-official"></i> Facebook</a>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-label="Open Menu"><i class="fa fa-bars"></i></button>
+  </div>
+ </nav>
 
 <!-- Page content -->
 <!-- <div class="w3-content fs-cream" style="max-width:2000px;margin-top:46px"> -->
-  
-  <div>
-    <div class="parallax w3-center"></div>
-  </div>      
   
     <!-- ABOUT -->
     <div class="fs-cream">
@@ -123,26 +149,26 @@ body {font-family: "Lato", sans-serif}
       <h1 class="w3-wide">GALLERY</h1>
       <div class="w3-row w3-margin-top w3-margin-bottom fs-txt">
         <div id="photos">
-          <img class="fs-band-img" src="images/adair.png" alt = "photo" />
-          <img class="fs-band-img" src="images/adair_3.jpg" alt = "photo" />
-          <img class="fs-band-img" src="images/band_2.jpg" alt = "photo" />
-          <img class="fs-band-img" src="images/orlando_J_2.jpg" alt = "photo" />
-          <img class="fs-band-img" src="images/orlando_d_2.jpg" alt = "photo" />
-          <img class="fs-band-img" src="images/band_3.png" alt = "photo" />
-          <img class="fs-band-img" src="images/krone_2.jpg" alt = "photo" />
-          <img class="fs-band-img" src="images/soper_2.jpg" alt = "photo" />
-          <img class="fs-band-img" src="images/krone_3.jpg" alt = "photo" />
-          <img class="fs-band-img" src="images/adair_2.jpg" alt = "photo" />
-          <img class="fs-band-img" src="images/orlando_J.png" alt = "photo" />
-          <img class="fs-band-img" src="images/orlando_J_3.jpg" alt = "photo" />
-          <img class="fs-band-img" src="images/orland_D_3.jpg" alt = "photo" />
-          <img class="fs-band-img" src="images/soper.png" alt = "photo" />
-          <img class="fs-band-img" src="images/orlando_D.png" alt = "photo" />
-          <img class="fs-band-img" src="images/krone.png" alt = "photo" />
-          <img class="fs-band-img" src="images/soper_3.jpg" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/adair.png" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/adair_3.jpg" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/band_2.jpg" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/orlando_J_2.jpg" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/orlando_d_2.jpg" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/band_3.png" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/krone_2.jpg" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/soper_2.jpg" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/krone_3.jpg" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/adair_2.jpg" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/orlando_J.png" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/orlando_J_3.jpg" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/orland_D_3.jpg" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/soper.png" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/orlando_D.png" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/krone.png" alt = "photo" />
+          <img class="fs-band-img gallery-img" src="images/soper_3.jpg" alt = "photo" />
         </div>
-        <div class ="w3-right fs-txt">
-          <p>Photography by <a href="https://benjaminvreeland.com/"> Ben Vreeland</a> and <a href=https://www.instagram.com/lizdonnphotography>Elizabeth Donnellan</a> </p>
+        <div class ="w3-right fs-txt w3-small">
+          <p> <i>Photography by <a href="https://benjaminvreeland.com/"> Ben Vreeland</a> and <a href=https://www.instagram.com/lizdonnphotography>Elizabeth Donnellan</a> </i></p>
         </div>
       </div>
     </div>
@@ -163,24 +189,69 @@ body {font-family: "Lato", sans-serif}
 <script>
 
 // Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+// function myFunction() {
+//   var x = document.getElementById("navDemo");
+//   if (x.className.indexOf("w3-show") == -1) {
+//     x.className += " w3-show";
+//   } else { 
+//     x.className = x.className.replace(" w3-show", "");
+//   }
+// }
 
-const parallaxContainer = document.querySelector('.parallax-container');
-        const parallaxImage = document.querySelector('.parallax-image');
+// const parallaxContainer = document.querySelector('.parallax-container');
+//         const parallaxImage = document.querySelector('.parallax-image');
 
-        parallaxContainer.addEventListener('mousemove', (e) => {
-            const x = e.clientX / window.innerWidth;
-            const y = e.clientY / window.innerHeight;
+//         parallaxContainer.addEventListener('mousemove', (e) => {
+//             const x = e.clientX / window.innerWidth;
+//             const y = e.clientY / window.innerHeight;
 
-            parallaxImage.style.transform = `translate(-${x * 20}px, -${y * 20}px)`;
-        });
+//             parallaxImage.style.transform = `translate(-${x * 20}px, -${y * 20}px)`;
+//         });
+
+// Navbar toggle for mobile
+document.addEventListener('DOMContentLoaded', function() {
+
+  const navToggle = document.querySelector('.nav-toggle');
+  const navbarContainer = document.querySelector('.navbar-container');
+  navToggle.addEventListener('click', function() {
+    navbarContainer.classList.toggle('active');
+  });
+
+  document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.navbar-container').classList.remove('active');
+  });
+});
+
+
+
+  // Lightbox functionality for gallery
+  const galleryImages = document.querySelectorAll('.gallery-img');
+  let lightbox = document.createElement('div');
+  lightbox.className = 'lightbox';
+  lightbox.innerHTML = '<button class="lightbox-close" aria-label="Close">&times;</button><img class="lightbox-img" src="" alt="Gallery Image" />';
+  document.body.appendChild(lightbox);
+  const lightboxImg = lightbox.querySelector('.lightbox-img');
+  const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+  galleryImages.forEach(img => {
+    img.addEventListener('click', function() {
+      lightboxImg.src = img.src;
+      lightbox.classList.add('active');
+    });
+  });
+  lightboxClose.addEventListener('click', function() {
+    lightbox.classList.remove('active');
+    lightboxImg.src = '';
+  });
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) {
+      lightbox.classList.remove('active');
+      lightboxImg.src = '';
+    }
+  });
+
+});
 
 </script>
 
