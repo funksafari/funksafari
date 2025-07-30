@@ -76,6 +76,12 @@ body {
     margin-bottom: 3rem;
   }
 
+  .hero-section {
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+  }
+
 }
 
 .parallax {
@@ -421,7 +427,24 @@ footer .fa {
     height: 100%;
     border: 0;
     border-radius: 10px;
+  }
+
+
+.bandcamp {
+  position: relative;
+  display: block;
+  width: 90%; /* width of iframe wrapper */
+  /* height: 0; */
+  margin: auto;
+  /* padding: 0% 0% 56.25%; 16:9 ratio */
+  /* overflow: hidden; */
+  /* margin-bottom: 20px; */
 }
+  
+.bandcamp iframe{
+  border-radius: 10px;
+}
+
 
 /* Dropdown Button */
 .dropbtn {
