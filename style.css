@@ -1,5 +1,6 @@
 body {
-    font-family:'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family:'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Helvetica', sans-serif;
     background: #FFFCEB;
     color: #222;
     margin: 0;
@@ -169,6 +170,18 @@ body {
 }
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+.mailing-list-container{
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 80vh;
+  border-radius: 0px 0px 0px 0px !important; 
+  /* max-width: 100%; */
 }
 
 
